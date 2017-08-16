@@ -13,6 +13,14 @@
 		A2886F0F1F441BFD005879E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2886F0D1F441BFD005879E1 /* Main.storyboard */; };
 		A2886F111F441BFD005879E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2886F101F441BFD005879E1 /* Assets.xcassets */; };
 		A2886F141F441BFD005879E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2886F121F441BFD005879E1 /* LaunchScreen.storyboard */; };
+		A2886F201F441E11005879E1 /* LabelLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2886F1D1F441E11005879E1 /* LabelLayer.swift */; };
+		A2886F211F441E11005879E1 /* LoadingCircleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2886F1E1F441E11005879E1 /* LoadingCircleLayer.swift */; };
+		A2886F221F441E11005879E1 /* RectangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2886F1F1F441E11005879E1 /* RectangleLayer.swift */; };
+		A2886F241F441E2B005879E1 /* ProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2886F231F441E2B005879E1 /* ProgressButton.swift */; };
+		A2886F261F441E61005879E1 /* PresentTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2886F251F441E61005879E1 /* PresentTransitionAnimator.swift */; };
+		A2886F281F441E68005879E1 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2886F271F441E68005879E1 /* TwoViewController.swift */; };
+		A2886F2A1F441F12005879E1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2886F291F441F12005879E1 /* Constants.swift */; };
+		A2886F2C1F441F40005879E1 /* pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2886F2B1F441F40005879E1 /* pic.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		A2886F101F441BFD005879E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2886F131F441BFD005879E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2886F151F441BFD005879E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2886F1D1F441E11005879E1 /* LabelLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelLayer.swift; sourceTree = "<group>"; };
+		A2886F1E1F441E11005879E1 /* LoadingCircleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCircleLayer.swift; sourceTree = "<group>"; };
+		A2886F1F1F441E11005879E1 /* RectangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleLayer.swift; sourceTree = "<group>"; };
+		A2886F231F441E2B005879E1 /* ProgressButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressButton.swift; sourceTree = "<group>"; };
+		A2886F251F441E61005879E1 /* PresentTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentTransitionAnimator.swift; sourceTree = "<group>"; };
+		A2886F271F441E68005879E1 /* TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
+		A2886F291F441F12005879E1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A2886F2B1F441F40005879E1 /* pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic.jpg; sourceTree = "<group>"; };
 		AAE34563A736B6C7661DA4EC /* Pods_AnimationDemo_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimationDemo_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47F0313738B49AFF36FB4E8 /* Pods-AnimationDemo-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationDemo-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationDemo-swift/Pods-AnimationDemo-swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,14 +94,38 @@
 		A2886F081F441BFD005879E1 /* AnimationDemo-swift */ = {
 			isa = PBXGroup;
 			children = (
+				A2886F2B1F441F40005879E1 /* pic.jpg */,
+				A2886F291F441F12005879E1 /* Constants.swift */,
+				A2886F1B1F441DFD005879E1 /* Layers */,
+				A2886F1C1F441DFD005879E1 /* ProgressButton */,
 				A2886F091F441BFD005879E1 /* AppDelegate.swift */,
 				A2886F0B1F441BFD005879E1 /* ViewController.swift */,
+				A2886F271F441E68005879E1 /* TwoViewController.swift */,
+				A2886F251F441E61005879E1 /* PresentTransitionAnimator.swift */,
 				A2886F0D1F441BFD005879E1 /* Main.storyboard */,
 				A2886F101F441BFD005879E1 /* Assets.xcassets */,
 				A2886F121F441BFD005879E1 /* LaunchScreen.storyboard */,
 				A2886F151F441BFD005879E1 /* Info.plist */,
 			);
 			path = "AnimationDemo-swift";
+			sourceTree = "<group>";
+		};
+		A2886F1B1F441DFD005879E1 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				A2886F1D1F441E11005879E1 /* LabelLayer.swift */,
+				A2886F1E1F441E11005879E1 /* LoadingCircleLayer.swift */,
+				A2886F1F1F441E11005879E1 /* RectangleLayer.swift */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		A2886F1C1F441DFD005879E1 /* ProgressButton */ = {
+			isa = PBXGroup;
+			children = (
+				A2886F231F441E2B005879E1 /* ProgressButton.swift */,
+			);
+			path = ProgressButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +192,7 @@
 			files = (
 				A2886F141F441BFD005879E1 /* LaunchScreen.storyboard in Resources */,
 				A2886F111F441BFD005879E1 /* Assets.xcassets in Resources */,
+				A2886F2C1F441F40005879E1 /* pic.jpg in Resources */,
 				A2886F0F1F441BFD005879E1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,8 +252,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2886F241F441E2B005879E1 /* ProgressButton.swift in Sources */,
+				A2886F211F441E11005879E1 /* LoadingCircleLayer.swift in Sources */,
+				A2886F201F441E11005879E1 /* LabelLayer.swift in Sources */,
+				A2886F281F441E68005879E1 /* TwoViewController.swift in Sources */,
+				A2886F261F441E61005879E1 /* PresentTransitionAnimator.swift in Sources */,
 				A2886F0C1F441BFD005879E1 /* ViewController.swift in Sources */,
+				A2886F221F441E11005879E1 /* RectangleLayer.swift in Sources */,
 				A2886F0A1F441BFD005879E1 /* AppDelegate.swift in Sources */,
+				A2886F2A1F441F12005879E1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +424,7 @@
 				A2886F1A1F441BFD005879E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
